@@ -4,10 +4,21 @@
 body {
   background: whitesmoke;
   background-size: cover;
+  animation:fading 5s
 }
+  @keyframes fading {
+    0% {
+      opacity:0
+    }
+    50% {
+      opacity:1
+    }
+    100% {
+      opacity:1
+    }
+  }
 .App {
   text-align: center;
-  margin: 5%;
   box-shadow: 10px 20px 20px 20px black;
   animation: mymove 5s infinite;
 }
@@ -18,7 +29,19 @@ body {
   background-origin: content-box;
   width: 100%;
   min-height: 30rem;
+  animation:fading 5s
 }
+  @keyframes fading {
+    0% {
+      opacity:0
+    }
+    50% {
+      opacity:1
+    }
+    100% {
+      opacity:1
+    }
+  }
 .Header-Image {
   display: flex;
   align-items: center;
@@ -26,13 +49,19 @@ body {
   width: 100%;
   position: relative;
   left: 0%;
-	/* margin: 7em -244px; */
-	animation: slide 2s 1
+  animation:fading 10s
 }
-@keyframes slide {
-	from { left: -150%; }
-	to { left: 0%; }
-}
+  @keyframes fading {
+    0% {
+      opacity:0
+    }
+    50% {
+      opacity:1
+    }
+    100% {
+      opacity:1
+    }
+  }
 .AboutMe {
   position: relative;
   background: url("./img/about_me.png") no-repeat top;

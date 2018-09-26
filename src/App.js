@@ -11,8 +11,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="Header"><img className="Header-Image" src={title}/></header>
-          <Route path='/' component={AboutMe} />
-          <Route path='/' component={Projects} />
+          
         </div>
       </Router>
     );
