@@ -1,0 +1,86 @@
+
+a:link {
+	text-decoration: none;
+	color: azure;
+}
+a:hover a:visited a:active {
+	color: crimson;
+}
+
+.header-main {
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background: transparent;
+	width: 100%;
+}
+.icon {
+	height: 1rem;
+	width: 5rem;
+}
+.logo-holder {
+	position: relative;
+	margin-left: 20%;
+}
+.logo {
+	height: 4rem;
+	width: 20rem;
+	margin-top: 1%;
+}
+
+/*------Navigation------------------------------------------------*/
+li {
+	display: inline;
+	margin: 2%;
+	margin-right: 5%;
+}
+li:hover {
+	color:crimson;
+	animation: fading 1s;
+}
+ul li {
+	color: azure;
+	width: 100%;
+}
+.nav {
+	margin-right: 5%;
+	position: relative;
+}
+/*-----------Footer---------------*/
+.footer-main {
+	display: flex;
+	position: absolute;
+  bottom:0;
+  width:100%;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	background: transparent;
+}/*---------Media---------*/
+/* Medium screens */
+@media all and (max-width: 974px) {
+  .header-main {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+	}
+	.logo-holder {
+		margin: 0%;
+	}
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .header-main {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+	}
+	li {
+		display: flex;
+	}
+	.logo-holder {
+		margin: 0%;
+	}
+}

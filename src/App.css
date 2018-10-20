@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Wire+One');
 
-
+html {
+  height: 100%;
+}
 body {
-  background: whitesmoke;
-  background-size: cover;
+  height: 100%;
   animation:fading 5s
 }
   @keyframes fading {
@@ -19,68 +20,6 @@ body {
   }
 .App {
   text-align: center;
-  box-shadow: 10px 20px 20px 20px black;
   animation: mymove 5s infinite;
 }
-.Header {
-  position: initial;
-  background: url("./img/xObqCPy.gif") no-repeat top center;
-  background-size: cover;
-  background-origin: content-box;
-  width: 100%;
-  min-height: 30rem;
-  animation:fading 5s
-}
-  @keyframes fading {
-    0% {
-      opacity:0
-    }
-    50% {
-      opacity:1
-    }
-    100% {
-      opacity:1
-    }
-  }
-.Header-Image {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  position: relative;
-  left: 0%;
-  animation:fading 10s
-}
-  @keyframes fading {
-    0% {
-      opacity:0
-    }
-    50% {
-      opacity:1
-    }
-    100% {
-      opacity:1
-    }
-  }
-.AboutMe {
-  position: relative;
-  background: url("./img/about_me.png") no-repeat top;
-  background-size: cover;
-  width: 100%;
-  min-height: 30rem;
-}
-.Title {
-  font-size: 10rem;
-  float: left;
-  font-family: 'Wire One', sans-serif;
-  color: whitesmoke;
-  margin-left: 2%;
-}
-/* @media  */
-.Projects {
-  position: relative;
-  background: url("./img/pink_background.png") no-repeat top;
-  background-size: cover;
-  width: 100%;
-  min-height: 30rem;
-}
+

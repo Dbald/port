@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: #1e404e;
+  background-size: cover;
+  animation:fading 5s
+}
+  @keyframes fading {
+    0% {
+      opacity:0
+    }
+    50% {
+      opacity:1
+    }
+    100% {
+      opacity:1
+    }
+  }
+#load {
+  background-image: url('../../img/4MXcEuf.gif');
+}
+.Header {
+  position: initial;
+  width: 100%;
+  height: fit-content;
+  animation:fading 5s
+}
+  @keyframes fading {
+    0% {
+      opacity:0
+    }
+    50% {
+      opacity:1
+    }
+    100% {
+      opacity:1
+    }
+  }
+.Header-Image {
+  background: url("../../img/xObqCPy.gif") no-repeat top center;
+  background-size: cover;
+  background-origin: content-box;
+  width: 100%;
+  position: relative;
+
+  animation:fading 10s
+}
+  @keyframes fading {
+    0% {
+      opacity:0
+    }
+    50% {
+      opacity:1
+    }
+    100% {
+      opacity:1
+    }
+  }
+  /* @media  */
+@media only screen and (max-width: 866px) {
+  body {
+    background-color: #2E3A3F;
+  }
+  .Header {
+    background: none;
+  }
+  #title {
+    visibility: hidden;
+  }
+  .Header-Image {
+    height: auto;
+  }
+  .Header-Image-Responsive {
+    background: url('../../img/Welcome.gif') no-repeat;
+    background-size: contain;
+    width: 100%;
+    position: relative;
+    animation:fading 10s
+}
+  @keyframes fading {
+    0% {
+      opacity:0
+    }
+    50% {
+      opacity:1
+    }
+    100% {
+      opacity:1
+    }
+  }
+}
+
