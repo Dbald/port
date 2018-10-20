@@ -38,8 +38,8 @@ img {
 }
 .flip-card {
   background-color: transparent;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   perspective: 1000px;
 }
 
@@ -74,6 +74,10 @@ img {
   color: white;
   transform: rotateY(180deg);
 }
+
+.mobile {
+  display: none;
+}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -90,5 +94,11 @@ img {
       flex: 100%;
       max-width: 100%;
   }
-  
+  .web {
+    display: none;
+    visibility: hidden;
+  }
+  .mobile {
+    display: initial;
+  }
 }

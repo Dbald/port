@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from '../navbar/header';
 import Front1 from '../../img/p1_front.png';
 import Back1 from '../../img/p1_back.png';
+import Mobile1 from '../../img/p1_mobile.png';
 
 class Projects extends Component {
 
@@ -17,7 +18,7 @@ class Projects extends Component {
 								<div className="flip-card">
   								<div className="flip-card-inner">
     								<div className="flip-card-front">
-      								<img src={Front1} />
+										<img className="web" src={Front1} /><img className="mobile" src={Mobile1} />
     								</div>
     								<div className="flip-card-back">
 											<a href="https://www.givememymoney.app"><img src={Back1} /></a>
@@ -29,7 +30,7 @@ class Projects extends Component {
 								<div className="flip-card">
   								<div className="flip-card-inner">
     								<div className="flip-card-front">
-      								<img src={Front1} />
+      								<img className="web" src={Front1} /><img className="mobile" src={Mobile1} />
     								</div>
     								<div className="flip-card-back">
 											<a href="https://www.givememymoney.app"><img src={Back1} /></a>
@@ -41,7 +42,7 @@ class Projects extends Component {
 								<div className="flip-card">
   								<div className="flip-card-inner">
     								<div className="flip-card-front">
-      								<img src={Front1} />
+										<img className="web" src={Front1} /><img className="mobile" src={Mobile1} />
     								</div>
     								<div className="flip-card-back">
 											<a href="https://www.givememymoney.app"><img src={Back1} /></a>
@@ -53,7 +54,7 @@ class Projects extends Component {
 								<div className="flip-card">
   								<div className="flip-card-inner">
     								<div className="flip-card-front">
-      								<img src={Front1} />
+										<img className="web" src={Front1} /><img className="mobile" src={Mobile1} />
     								</div>
     								<div className="flip-card-back">
 											<a href="https://www.givememymoney.app"><img src={Back1} /></a>
