@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from '../navbar/header';
 import Front1 from '../../img/p1_front.png';
 import Back1 from '../../img/p1_back.png';
-import Mobile1 from '../../img/p1_mobile.png';
+import Mobilef1 from '../../img/p1_mobile_front.png';
+import Mobileb1 from '../../img/p1_mobile_back.png';
 
 class Projects extends Component {
 
@@ -18,10 +19,10 @@ class Projects extends Component {
 								<div className="flip-card">
   								<div className="flip-card-inner">
     								<div className="flip-card-front">
-										<img className="web" src={Front1} /><img className="mobile" src={Mobile1} />
+										<img className="web" src={Front1} /><img className="mobile" src={Mobilef1} />
     								</div>
     								<div className="flip-card-back">
-											<a href="https://www.givememymoney.app"><img src={Back1} /></a>
+											<a href="https://www.givememymoney.app"><img className="web" src={Back1} /><img className="mobile" src={Mobileb1} /></a>
     								</div>
   								</div>
 								</div>
@@ -30,10 +31,10 @@ class Projects extends Component {
 								<div className="flip-card">
   								<div className="flip-card-inner">
     								<div className="flip-card-front">
-      								<img className="web" src={Front1} /><img className="mobile" src={Mobile1} />
+      								<img className="web" src={Front1} /><img className="mobile" src={Mobilef1} />
     								</div>
     								<div className="flip-card-back">
-											<a href="https://www.givememymoney.app"><img src={Back1} /></a>
+											<a href="https://www.givememymoney.app"><img className="web" src={Back1} /><img className="mobile" src={Mobileb1} /></a>
     								</div>
   								</div>
 								</div>
@@ -42,10 +43,10 @@ class Projects extends Component {
 								<div className="flip-card">
   								<div className="flip-card-inner">
     								<div className="flip-card-front">
-										<img className="web" src={Front1} /><img className="mobile" src={Mobile1} />
+										<img className="web" src={Front1} /><img className="mobile" src={Mobilef1} />
     								</div>
     								<div className="flip-card-back">
-											<a href="https://www.givememymoney.app"><img src={Back1} /></a>
+											<a href="https://www.givememymoney.app"><img className="web" src={Back1} /><img className="mobile" src={Mobileb1} /></a>
     								</div>
   								</div>
 								</div>
@@ -54,10 +55,10 @@ class Projects extends Component {
 								<div className="flip-card">
   								<div className="flip-card-inner">
     								<div className="flip-card-front">
-										<img className="web" src={Front1} /><img className="mobile" src={Mobile1} />
+										<img className="web" src={Front1} /><img className="mobile" src={Mobilef1} />
     								</div>
     								<div className="flip-card-back">
-											<a href="https://www.givememymoney.app"><img src={Back1} /></a>
+											<a href="https://www.givememymoney.app"><img className="web" src={Back1} /><img className="mobile" src={Mobileb1} /></a>
     								</div>
   								</div>
 								</div>
