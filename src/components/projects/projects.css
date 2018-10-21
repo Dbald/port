@@ -142,11 +142,11 @@ img {
   }
   .flip-card .flip-card-front .flip-card-inner .flip-card-inner {
     margin-bottom: 2%;
-    max-height: 370px;
-    width: auto;
+    max-height: auto;
+    width: 100%;
   }
   img {
-    max-height: 370px;
-    width: auto;
+    max-height: 3auto;
+    width: 100%;
   }
 }
