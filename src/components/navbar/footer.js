@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { Link, NavLink, withRouter } from 'react-router-dom';
-import mail from '../../img/mail-icon.png';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 
 class Footer extends Component {
   render() {
-    const logo = require('../../img/header_letter.png');
-
     return (
       //---------HEADER---------//
       <header className="footer-main">

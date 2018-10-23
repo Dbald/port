@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, NavLink, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 
 class Header extends Component {
@@ -10,9 +10,11 @@ class Header extends Component {
       //---------HEADER---------//
       <header className="header-main">
         <Link to='home'>
-        <a className="logo-holder"><img className='logo' src={logo}/></a>
+        <a className="logo-holder"><img className='logo' src={logo} alt="logo"/></a>
         </Link>
       {/* //-------Navigation Start-----// */}
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle"/>
       <div className="nav">
         <ul>
           <Link to='home'>

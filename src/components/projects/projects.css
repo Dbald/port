@@ -7,7 +7,7 @@ body {
   font-family: Arial;
 }
 .Projects {
-  background-color: blanchedalmond;
+  background-color: #8cceb1;
   border-radius: 15%;
   padding-bottom: 10%;
   padding-top: 2%;
@@ -39,8 +39,13 @@ body {
 .column img {
   vertical-align: middle;
 }
-img {
+.web {
   max-height: 400px;
+  border-radius: 15%;
+}
+.mobile {
+  max-height: 400px;
+  border-radius: 15%;
 }
 .flip-card {
   background-color: transparent;
@@ -90,17 +95,22 @@ img {
     border-radius: 2%;
   }
   .column {
-      -ms-flex: 33%;
-      flex: 33%;
-      max-width: 33%;
+      -ms-flex: 25%;
+      flex: 25%;
+      max-width: 25%;
   }
   .flip-card {
     max-width: 500px;
   }
-  img .flip-card-front .flip-card-back .flip-card-inner {
-    margin-bottom: 2%;
-    max-height: 300px;
+  .web {
+    max-height: 340px;
     width: auto;
+    border-radius: 0;
+  }
+  .mobile {
+    max-height: 340px;
+    width: auto;
+    border-radius: 0;
   }
   .flip-card-inner {
     box-shadow: none;
@@ -121,9 +131,15 @@ img {
     width: auto;
     margin-bottom: 2%;
   }
-  img {
+  .web {
     max-height: 380.5px;
     width: auto;
+    border-radius: 0;
+  }
+  .mobile {
+    max-height: 380.5px;
+    width: auto;
+    border-radius: 0;
   }
   .web {
     display: none;
@@ -146,7 +162,11 @@ img {
     max-height: auto;
     width: 100%;
   }
-  img {
+  .web {
+    max-height: 3auto;
+    width: 100%;
+  }
+  .mobile {
     max-height: 3auto;
     width: 100%;
   }

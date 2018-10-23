@@ -16,6 +16,16 @@ a:hover a:visited a:active {
 	background: transparent;
 	width: 100%;
 }
+label {
+	margin: 0 15px 0 0;
+	font-size: 26px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+#toggle {
+	display: none;
+}
 .icon {
 	height: 1rem;
 	width: 5rem;
@@ -28,16 +38,20 @@ a:hover a:visited a:active {
 	height: 4rem;
 	width: 20rem;
 	margin-top: 1%;
+	transition: transform .2s;
 }
-
+.logo:hover {
+  transform: scale(1.2);
+}
 /*------Navigation------------------------------------------------*/
 li {
 	display: inline;
 	margin: 2%;
 	margin-right: 5%;
+	transition: transform .2s;
 }
 li:hover {
-	color:crimson;
+	color:#d2e063;
 	animation: fading 1s;
 }
 ul li {
@@ -47,6 +61,7 @@ ul li {
 .nav {
 	margin-right: 5%;
 	position: relative;
+	clear: right;
 }
 /*-----------Footer---------------*/
 .footer-main {
@@ -75,12 +90,22 @@ ul li {
 @media all and (max-width: 500px) {
   .header-main {
     /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
+		flex-direction: column;
+	}
+	.nav {
+		display: none;
 	}
 	li {
 		display: flex;
 	}
 	.logo-holder {
 		margin: 0%;
+	}
+	label {
+		display: block;
+		cursor: pointer;
+	}
+	#toggle:checked + nav {
+		display: block;
 	}
 }

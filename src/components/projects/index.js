@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import Gallery from 'react-grid-gallery';
 import './projects.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Header from '../navbar/header';
 import Front1 from '../../img/p1_front.png';
 import Back1 from '../../img/p1_back.png';
 import Mobilef1 from '../../img/p1_mobile_front.png';
@@ -18,7 +15,7 @@ class Projects extends Component {
     render() {
         return(
             <div className="Projects">
-            	<h1 className="Title">Projects...</h1>
+            	<h1 className="Title">Projects</h1>
 							<div className="row">
   							<div className="column">
 								<div className="flip-card">
