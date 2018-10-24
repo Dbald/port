@@ -6,3 +6,41 @@
   padding-bottom: 10%;
   padding-top: 2%;
 }
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.submit {
+  padding: 1%;
+  background-color: #d2e063;
+  border-radius: 10%;
+  color: black;
+  font-size: 15px;
+}
+.socialIcons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.icons {
+  width: 50px;
+  height: auto;
+}
+@media screen and (max-width: 1625px) {
+  .Contact {
+    border-radius: 2%;
+  }
+}@media screen and (max-width: 1237px) {
+  .Contact {
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .tab-container {
+    padding: 2%;
+  }
+}

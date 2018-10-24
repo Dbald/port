@@ -13,8 +13,6 @@ class Header extends Component {
         <a className="logo-holder"><img className='logo' src={logo} alt="logo"/></a>
         </Link>
       {/* //-------Navigation Start-----// */}
-      <label for="toggle">&#9776;</label>
-      <input type="checkbox" id="toggle"/>
       <div className="nav">
         <ul>
           <Link to='home'>
