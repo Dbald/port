@@ -1,19 +1,21 @@
 .Contact {
   width: 100%;
   box-sizing: border-box;
-  background-color: #55a4a5;
   padding-bottom: 10%;
   padding-top: 2%;
 }
 form {
+  background: #55a4a5;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2%;
 }
 .submit {
   padding: 1%;
-  background-color: #d2e063;
+  background-color: ;
   border-radius: 10%;
   color: black;
   font-size: 15px;
