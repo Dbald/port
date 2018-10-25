@@ -3,7 +3,7 @@ import { Document, Page } from "react-pdf";
 import "../../App.css";
 import "./aboutme.css";
 import { Tabs, Tab, TabList, TabPanel } from "react-tabs";
-import file from '../../assets/Devin_Baldwin_-_Resume_-_Software_Engineer.pdf';
+import file from "../../assets/Devin_Baldwin_-_Resume_-_Software_Engineer.pdf";
 
 class AboutMe extends Component {
   state = {
@@ -125,13 +125,15 @@ class AboutMe extends Component {
           <TabPanel className="tabpanel">
             <h2>My Resume</h2>
             <div className="resume">
-              <Document
-                className="file"
-                file={file}
-                onLoadSuccess={this.onDocumentLoadSuccess}
-              >
-                <Page pageNumber={pageNumber} />
-              </Document>
+              <a href={file}>
+                <Document
+                  className="file"
+                  file={file}
+                  onLoadSuccess={this.onDocumentLoadSuccess}
+                >
+                  <Page pageNumber={pageNumber} />
+                </Document>
+              </a>
             </div>
           </TabPanel>
         </Tabs>

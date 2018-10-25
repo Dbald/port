@@ -8,7 +8,6 @@ body {
 }
 .Projects {
   background-color: #8cceb1;
-  border-radius: 15%;
   padding-bottom: 10%;
   padding-top: 2%;
 }
@@ -91,9 +90,6 @@ body {
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1625px) {
-  .Projects {
-    border-radius: 2%;
-  }
   .column {
       -ms-flex: 25%;
       flex: 25%;

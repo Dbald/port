@@ -2,7 +2,6 @@
   width: 100%;
   box-sizing: border-box;
   background-color: #8cceb1;
-  border-radius: 15%;
   padding-bottom: 10%;
   padding-top: 2%;
   text-align: center;
@@ -16,7 +15,7 @@
 .Entries {
   width: 45%;
   box-sizing: border-box;
-  background: #d2e063;
+  background: beige;
   padding-bottom: 1%;
   padding-top: 2%;
   margin: 2%;
@@ -32,11 +31,6 @@
   float: right;
 }
 /* MEDIA */
-@media screen and (max-width: 1625px) {
-  .Blog {
-    border-radius: 2%;
-  }
-}
 @media screen and (max-width: 1237px) {
   .Blog {
     border-radius: 0;

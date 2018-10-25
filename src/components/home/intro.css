@@ -41,7 +41,6 @@ body {
   background-origin: content-box;
   width: 100%;
   position: relative;
-  border-radius: 15%;
   animation:fading 10s
 }
   @keyframes fading {
@@ -56,11 +55,6 @@ body {
     }
   }
   /* @media  */
-  @media screen and (max-width: 1625px) {
-    .Header-Image {
-      border-radius: 2%;
-    }
-  }
 @media only screen and (max-width: 866px) {
   body {
     background-color: #2E3A3F;

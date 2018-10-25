@@ -42,7 +42,6 @@ li {
 }
 li:hover {
 	color:#d2e063;
-	animation: fading 1s;
 }
 ul li {
 	color: azure;
