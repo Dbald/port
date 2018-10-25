@@ -1,7 +1,7 @@
 .Blog {
   width: 100%;
   box-sizing: border-box;
-  background-color: #8cceb1;
+  background-color: transparent;
   padding-bottom: 10%;
   padding-top: 2%;
   text-align: center;
@@ -10,17 +10,18 @@
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
+  justify-content: center;
   padding: 0 4px;
 }
 .Entries {
-  width: 45%;
+  width: 50%;
   box-sizing: border-box;
   background: beige;
   padding-bottom: 1%;
   padding-top: 2%;
   margin: 2%;
   text-align: left;
-  box-shadow: #4b5025 4px 4px 6px 4px;
+  box-shadow: #000000 4px 4px 6px 4px;
 }
 .span {
   margin: 2%;
@@ -29,17 +30,16 @@
   height: 20px;
   width: auto;
   float: right;
+  transition: transform .2s;
+}
+.icon:hover {
+  transform: scale(1.2);
 }
 /* MEDIA */
-@media screen and (max-width: 1237px) {
-  .Blog {
-    border-radius: 0;
-  }
-}
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 785px) {
   .Entries {
     width: 100%;
+    box-shadow: 0 0 0 0;
   }
 }

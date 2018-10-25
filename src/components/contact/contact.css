@@ -28,6 +28,10 @@ form {
 .icons {
   width: 50px;
   height: auto;
+  transition: transform .2s;
+}
+.icons:hover {
+  transform: scale(1.2);
 }
 @media screen and (max-width: 1237px) {
   .Contact {

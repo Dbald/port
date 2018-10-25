@@ -17,7 +17,7 @@ h3 {
 .AboutMe {
   width: 100%;
   box-sizing: border-box;
-  background-color: #8cceb1;
+  background-color: transparent;
   padding-bottom: 10%;
   padding-top: 2%;
 }
