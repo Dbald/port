@@ -13,9 +13,12 @@ form {
   flex-direction: column;
   padding: 2%;
 }
+input:invalid {
+  border-color: red;
+}
 .submit {
   padding: 1%;
-  background-color: ;
+  background-color: green;
   border-radius: 10%;
   color: black;
   font-size: 15px;
@@ -30,6 +33,7 @@ form {
 .icons {
   width: 50px;
   height: auto;
+  margin: 10px;
   transition: transform .2s;
 }
 .icons:hover {
