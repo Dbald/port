@@ -1,7 +1,10 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
-
+const express = require("express");
+const bodyParser = require("body-parser");
+const nodemailer = require("nodemailer");
+const cors = require("cors");
+const mongoose = require("mongoose");
+const mongooseTypes = require("mongoose-types");
+const dataModel = require('./model.js');
 const form = express();
 
 //View engine setup
@@ -10,72 +13,51 @@ const form = express();
 //Middleware
 form.use(bodyParser.urlencoded({ extended: false }));
 form.use(bodyParser.json());
+form.use(cors());
 
-form.get('http://localhost:3000/contact',(req, res) => {
-  console.log('Hello');
-})
+form.post("/send",(req, res) => {
 
-form.post('/send', (req, res) => {
-  res.send('')
-})
-// Schema
-const mongoose = require('mongoose');
-const mongooseTypes = require('mongoose-types');
+  const note = new dataModel(req.body);
+  note
+      .save()
+      .then(stuff => {
+          res.status(201).json(stuff);
 
-mongooseTypes.loadTypes(mongoose, 'email');
 
-const formData = new mongoose.Schema(
-  {
-    name: {
-      type: String,
-      required: true,
-    },
-    email: {
-      type: String,
-      required: true,
-    },
-    subject: {
-      type: String
-    },
-    company: {
-      type: String,
-      required: true,
-    },
-    message: {
-      type: String,
+      })
+      .catch(err => {
+          res.status(500).json({ message: 'Make sure to fill out the title and body text areas with strings.'})
+      });
+
+ })
+
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "okayxgg@gmail.com",
+      pass: "o1234567"
     }
-  }
-);
+  });
 
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-         user: 'okayxgg@gmail.com',
-         pass: 'o1234567'
-     }
- });
+  const mailOptions = {
+    from: `${dataModel.email}`, // sender address
+    to: "devincitechsolutions@gmail.com", // list of receivers
+    subject: `${dataModel.subject}`, // Subject line
+    context: {
+      name: `${dataModel.name}`,
+      email: `${dataModel.email}`,
+      company: `${dataModel.company}`,
+      subject: `${dataModel.subject}`,
+      message: `${dataModel.message}`
+    }
+  };
 
- const mailOptions = {
-  from: `${formData.email}` , // sender address
-  to: 'devincitechsolutions@gmail.com', // list of receivers
-  subject: `${formData.subject}`, // Subject line
-  context: {
-    name: `${formData.name}`,
-    email: `${formData.email}`,
-    company: `${formData.company}`,
-    subject: `${formData.subject}`,
-    message: `${formData.message}`,
-  },
-};
+  transporter.sendMail(mailOptions, function(err, info) {
+    if (err) console.log(err);
+    else console.log(info);
+  });
 
- transporter.sendMail(mailOptions, function (err, info) {
-  if(err)
-    console.log(err)
-  else
-    console.log(info);
-});
+  form.listen(5000, () => console.log("Server Started"));
 
-form.listen(5000, () => console.log('Server Started'));
 
-const Form = mongoose.model('Form', formData);
-module.exports = Form;
+

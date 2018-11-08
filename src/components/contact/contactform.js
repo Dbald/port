@@ -12,62 +12,42 @@ export default class ContactForm extends React.Component {
       subject: "",
       message: ""
     };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
-  handleChange(e) {
-    const name = e.target.value;
-    this.setState({ name: name });
-    const email = e.target.value;
-    this.setState({ email: email });
-    const company = e.target.value;
-    this.setState({ company: company });
-    const subject = e.target.value;
-    this.setState({ subject: subject });
-    const message = e.target.value;
-    this.setState({ message: message });
+  handleTextInput = e => {
+    this.setState({ [e.target.name]: e.target.value});
   }
   resetForm() {
     document.getElementById("contact-form").reset();
   }
+
+  addForm = () => {
+    const { name, email, company, subject, message } = this.state
+
+    const foo = {  name: name,
+      email: email,
+      company: company,
+      subject: subject,
+      message: message};
+     axios
+     .post(`http://localhost:5000/send`, foo)
+    .then(savedData => {
+      console.log(savedData);
+    })
+    .catch(error => {
+       console.log(error);
+   });
+  }
+
   handleSubmit(e) {
     e.preventDefault();
-
-    const { name, email, company, subject, message } = this.state;
-    // console.log(
-    //   `${name}`,
-    //   `${email}`,
-    //   `${company}`,
-    //   `${subject}`,
-    //   `${message}`
-    //   );
-
-    axios({
-      method: "post",
-      url: "http://localhost:5000/send",
-      data: {
-        name: name,
-        email: email,
-        company: company,
-        subject: subject,
-        message: message
-      }
-    }).then(response => {
-      if (response.data.msg === "success") {
-        alert("Message Sent.");
-        this.resetForm();
-      } else if (response.data.msg === "fail") {
-        alert("Message failed to send.");
-      }
-    });
+    // this.addForm;
   }
 
   render() {
     return (
       <form
         id="contact-form"
-        onSubmit={this.handleSubmit}
+        onSubmit={this.addForm}
         action="http://localhost:5000/send"
         method="post"
       >
@@ -78,7 +58,7 @@ export default class ContactForm extends React.Component {
             type="text"
             name="name"
             value={this.state.value}
-            onChange={this.handleChange}
+            onChange={this.handleTextInput}
           />
         </label>
         <br />
@@ -89,7 +69,7 @@ export default class ContactForm extends React.Component {
             type="text"
             name="email"
             value={this.state.value}
-            onChange={this.handleChange}
+            onChange={this.handleTextInput}
           />
         </label>
         <br />
@@ -100,7 +80,7 @@ export default class ContactForm extends React.Component {
             type="text"
             name="company"
             value={this.state.value}
-            onChange={this.handleChange}
+            onChange={this.handleTextInput}
           />
         </label>
         <br />
@@ -110,7 +90,7 @@ export default class ContactForm extends React.Component {
           <select
             name="subject"
             value={this.state.value}
-            onChange={this.handleChange}
+            onChange={this.handleTextInput}
           >
             <option value="null" />
             <option value="employment">Employment</option>
@@ -124,7 +104,7 @@ export default class ContactForm extends React.Component {
           <textarea
             name="message"
             value={this.state.value}
-            onChange={this.handleChange}
+            onChange={this.handleTextInput}
           />
         </label>
         <br />
