@@ -12,7 +12,7 @@ class Blog extends Component {
 						<div className="span">
         		<b>Aug 13</b>
 						<a href="https://medium.com/@devinbaldwin/hello-world-i-want-to-be-a-programmer-i-think-e75b328173e0"><img className="icon" src="https://cdn-images-1.medium.com/max/1600/1*emiGsBgJu2KHWyjluhKXQw.png" alt="Medium"/></a>
-						<h3>“Hello World!”.. I want to be a programmer!</h3>
+						<h2 className="blog-title">“Hello World!”.. I want to be a programmer!</h2>
 						<p>&nbsp;&nbsp; The day that you wake up and decide that you want to get into programming, 
 							is the day that you throw caution into the wind and embark on a new journey. 
 							A guaranteed adventure, filled with excitement, syntax and innovation! Congrats 
@@ -50,7 +50,7 @@ class Blog extends Component {
 							graduated Lambda School, the job hunt begins…</p>
 						</div>
           </div>
-					<div className="Entries">
+					{/* <div className="Entries">
 						<div className="span">
         		<b>Aug 13</b>
 						<a href="https://medium.com/@devinbaldwin/hello-world-i-want-to-be-a-programmer-i-think-e75b328173e0"><img className="icon" src="https://cdn-images-1.medium.com/max/1600/1*emiGsBgJu2KHWyjluhKXQw.png" alt="Medium"/></a>
@@ -133,7 +133,7 @@ class Blog extends Component {
 							I still have a lot to learn and am excited for what the future holds. Now that I’ve 
 							graduated Lambda School, the job hunt begins…</p>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 			);

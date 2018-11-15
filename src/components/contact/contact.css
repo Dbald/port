@@ -1,25 +1,45 @@
 .Contact {
+  display: flex;
+  justify-content: center;
   width: 100%;
   box-sizing: border-box;
   padding-bottom: 10%;
   padding-top: 2%;
 }
+.inner-contact {
+  width: 50%;
+}
 form {
-  background: #55a4a5;
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  
   flex-direction: column;
+  border-radius: 15px;
   padding: 2%;
+}
+label {
+  color: black;
+  font-size: 20px
+}
+input, select, textarea {
+  border-radius: 25px;
+  padding: 1%;
+  width: 50%;
 }
 input:invalid {
   border-color: red;
 }
 .submit {
   padding: 1%;
-  background-color: green;
-  border-radius: 10%;
+  cursor: pointer;
+  width: 10%;
+  background-color: whitesmoke;
+  border-radius: 10px;
   color: black;
   font-size: 15px;
 }
@@ -39,6 +59,9 @@ input:invalid {
 .icons:hover {
   transform: scale(1.2);
 }
+.icons:active {
+  transform: scale(0.8);
+}
 @media screen and (max-width: 1237px) {
   .Contact {
     border-radius: 0;
@@ -47,5 +70,12 @@ input:invalid {
 @media screen and (max-width: 500px) {
   .tab-container {
     padding: 2%;
+  }
+  .inner-contact, form, .submit {
+    width: 100%
+  }
+  {
+    width: 100%,
+
   }
 }

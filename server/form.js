@@ -2,18 +2,12 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
-const mongoose = require("mongoose");
-const mongooseTypes = require("mongoose-types");
 const dataModel = require('./model.js');
 const form = express();
 
-//View engine setup
-//Dont need it
-
-//Middleware
-form.use(bodyParser.urlencoded({ extended: false }));
-form.use(bodyParser.json());
-form.use(cors());
+form.get("/send", (req, res) => {
+  res.send(dataModel).json(req.body);
+})
 
 form.post("/send",(req, res) => {
 
@@ -26,7 +20,7 @@ form.post("/send",(req, res) => {
 
       })
       .catch(err => {
-          res.status(500).json({ message: 'Make sure to fill out the title and body text areas with strings.'})
+          res.status(500).json(err);
       });
 
  })
@@ -56,8 +50,6 @@ form.post("/send",(req, res) => {
     if (err) console.log(err);
     else console.log(info);
   });
-
-  form.listen(5000, () => console.log("Server Started"));
 
 
 

@@ -16,9 +16,6 @@ export default class ContactForm extends React.Component {
   handleTextInput = e => {
     this.setState({ [e.target.name]: e.target.value});
   }
-  resetForm() {
-    document.getElementById("contact-form").reset();
-  }
 
   addForm = () => {
     const { name, email, company, subject, message } = this.state
@@ -27,7 +24,9 @@ export default class ContactForm extends React.Component {
       email: email,
       company: company,
       subject: subject,
-      message: message};
+      message: message
+    };
+
      axios
      .post(`http://localhost:5000/send`, foo)
     .then(savedData => {
@@ -42,7 +41,9 @@ export default class ContactForm extends React.Component {
     e.preventDefault();
     // this.addForm;
   }
-
+  resetForm = () => {
+    document.getElementById("contact-form").reset();
+    }
   render() {
     return (
       <form

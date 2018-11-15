@@ -28,7 +28,8 @@ class Projects extends Component {
     								</div>
   								</div>
 								</div>
-								<div className="flip-card">
+								</div>
+								{/* <div className="flip-card">
   								<div className="flip-card-inner">
     								<div className="flip-card-front">
 										<img className="web" src={Front1} /><img className="mobile" src={Mobilef1} />
@@ -38,7 +39,7 @@ class Projects extends Component {
     								</div>
   								</div>
 								</div>
-  							</div>
+  							</div> */}
 								<div className="column">
 								<div className="flip-card">
   								<div className="flip-card-inner">
@@ -50,7 +51,7 @@ class Projects extends Component {
     								</div>
   								</div>
 								</div>
-								<div className="flip-card">
+								{/* <div className="flip-card">
   								<div className="flip-card-inner">
     								<div className="flip-card-front">
 										<img className="web" src={Front1} /><img className="mobile" src={Mobilef1} />
@@ -102,36 +103,8 @@ class Projects extends Component {
     								<div className="flip-card-back">
 											<a href="https://www.givememymoney.app"><img className="web" src={Back1} /><img className="mobile" src={Mobileb1} /></a>
     								</div>
-  								</div>
-								</div>
+  								</div>*/}
   							</div>
-								{/* <div className="column">
-    							<img src={img} />
-									<img src={img} />
-									<img src={img} />
-									<img src={img} />
-									<img src={img} />
-									<img src={img} />
-									<img src={img} />
-  							</div>
-								<div className="column">
-    							<img src={img} />
-									<img src={img} />
-									<img src={img} />
-									<img src={img} />
-									<img src={img} />
-									<img src={img} />
-									<img src={img} />
-  							</div>
-								<div className="column">
-    							<img src={img} />
-									<img src={img} />
-									<img src={img} />
-									<img src={img} />
-									<img src={img} />
-									<img src={img} />
-									<img src={img} />
-  							</div> */}
 							</div>
             </div>
         );

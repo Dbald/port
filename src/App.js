@@ -7,6 +7,7 @@ import AboutMe from './components/aboutme';
 import Projects from './components/projects';
 import Blog from './components/blog';
 import Contact from './components/contact';
+// import Footer from './components/navbar/footer';
 
 class App extends Component {
   render() {

@@ -6,6 +6,9 @@
   padding-top: 2%;
   text-align: center;
 }
+.blog-title {
+  color: #000000;
+}
 .container {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
@@ -16,7 +19,8 @@
 .Entries {
   width: 50%;
   box-sizing: border-box;
-  background: beige;
+  background: url('https://ubisafe.org/images/book-vector-old-1.png') top no-repeat;
+  background-size: cover;
   padding-bottom: 1%;
   padding-top: 2%;
   margin: 2%;
@@ -24,7 +28,7 @@
   box-shadow: #000000 4px 4px 6px 4px;
 }
 .span {
-  margin: 2%;
+  margin: 10%;
 }
 .icon {
   height: 20px;
