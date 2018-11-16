@@ -35,7 +35,10 @@ html {
   margin: 0;
   font-family: Arial;
 }
-
+/* IDs */
+#left {
+  justify-content: flex-start;
+}
 /* Style tab links */
 .tab-container {
   background: url("http://meadowwoodgarden.com/wp-content/uploads/2018/06/modern-design-wood-tabletop-royalty-free-table-top-shot-pictures-images-and-stock-photos-istock.jpeg")

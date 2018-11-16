@@ -2,26 +2,24 @@ import React, { Component } from "react";
 import "../../App.css";
 import "./aboutme.css";
 import { Tabs, Tab, TabList, TabPanel } from "react-tabs";
-import SkillBar from 'react-skillbars';
+import SkillBar from "react-skillbars";
 import file from "../../assets/Devin_Baldwin_-_Resume_-_Software_Engineer.pdf";
 
 const skills = [
-    {type: "HTML", level: 99},
-    {type: "CSS", level: 98},
-    {type: "JavaScript", level: 68},
-    {type: "React", level: 76},
-    {type: "Native", level: 70},
-    {type: "Express", level: 70},
-    {type: "UX/UI", level: 85},
-    {type: "VR/AR", level: 68},
-    {type: "MongoDB", level: 70},
-    {type: "Wordpress", level: 90},
-    {type: "Git", level: 86},
-    {type: "C#", level: 36},
-    {type: "Python", level: 48}
-  ];
+  { type: "HTML", level: 99 },
+  { type: "CSS", level: 98 },
+  { type: "JavaScript", level: 68 },
+  { type: "React", level: 76 },
+  { type: "Native", level: 70 },
+  { type: "Express", level: 70 },
+  { type: "UX/UI", level: 85 },
+  { type: "VR/AR", level: 68 },
+  { type: "MongoDB", level: 70 },
+  { type: "Wordpress", level: 90 },
+  { type: "Git", level: 86 }
+];
 
-  class AboutMe extends Component {
+class AboutMe extends Component {
   render() {
     return (
       <div className="AboutMe">
@@ -245,6 +243,13 @@ const skills = [
                     and produce music.
                   </h4>
                   <div className="socialIcons">
+                    <a href={file}>
+                      <img
+                        id="left"
+                        className="icons"
+                        src="https://mbtskoudsalg.com/images/resume-icon-png-4.png"
+                      />
+                    </a>
                     <a href="https://www.linkedin.com/in/devin-baldwin-a7381073/">
                       <img
                         className="icons"
@@ -257,6 +262,7 @@ const skills = [
                         src="https://i0.wp.com/lilliputadventure.com/wp-content/uploads/2018/06/Instagram-Icon.png?fit=1455%2C1454"
                       />
                     </a>
+
                     <a href="https://www.youtube.com/channel/UCdWMwP8ynch1I0fkgTZUrLw/videos">
                       <img
                         className="icons"
@@ -277,7 +283,8 @@ const skills = [
                     <SkillBar
                       animationDelay={0}
                       animationDuration={3000}
-                     skills={skills}/>
+                      skills={skills}
+                    />
                   </div>
                   <div className="middle-inner-resume">
                     <h2>Experience</h2>
