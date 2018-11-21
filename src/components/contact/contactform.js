@@ -28,19 +28,14 @@ export default class ContactForm extends React.Component {
     };
 
      axios
-     .post(`http://localhost:5000/send`, foo)
+     .post(`mailto:devincitechsolutions@gmail.com`, foo)
     .then(savedData => {
       console.log(savedData);
     })
     .catch(error => {
        console.log(error);
    });
-  }
-
-  handleSubmit(e) {
-    e.preventDefault();
-    // this.addForm;
-  }
+  };
   resetForm = () => {
     document.getElementById("contact-form").reset();
     }
@@ -49,7 +44,7 @@ export default class ContactForm extends React.Component {
       <form
         id="contact-form"
         onSubmit={this.addForm}
-        action="http://localhost:5000/send"
+        action={this.addForm}
         method="post"
       >
         <label>
