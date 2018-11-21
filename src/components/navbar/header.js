@@ -14,7 +14,7 @@ class Header extends Component {
         </Link>
       {/* //-------Navigation Start-----// */}
       <div className="nav">
-        <ul>
+        <ul className="main-nav">
           <Link to='home'>
             <li>
               <a><b>HOME</b></a>
