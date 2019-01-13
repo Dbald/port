@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import file from "../../assets/Devin_Baldwin_-_Resume_-_Software_Engineer.pdf";
+import file from '../../assets/resume.pdf';
 import "./navbar.css";
 
 export default class Footer extends Component {
