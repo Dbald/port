@@ -231,10 +231,11 @@ class AboutMe extends Component {
                     <b>Software Engineer | Content Creator</b>
                   </h2>
                   <h4 className="bio">
-                    &nbsp;&nbsp;I enjoy working with Javascript, React, Redux,
-                    MongoDB, Express.js, Node.js, React Native, as well as HTML
-                    and CSS. I'm always looking to learn and integrate new
-                    programming languages to have in my arsenal.
+                    &nbsp;&nbsp;Front End Engineer who is passionate and confident in my ability to create and
+design beautiful interfaces. A fast learner and always eager to grow my knowledge.
+Morale tends to spike up due to my positive, upbeat and optimistic personality.
+Looking to grow with a great team of individuals that can guide my growth as an
+engineer.
                   </h4>
                 </div>
                 <div className="inner-resume-container">
