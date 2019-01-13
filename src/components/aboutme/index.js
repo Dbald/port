@@ -3,7 +3,6 @@ import "../../App.css";
 import "./aboutme.css";
 import { Tabs, Tab, TabList, TabPanel } from "react-tabs";
 import SkillBar from "react-skillbars";
-import file from "../../assets/Devin_Baldwin_-_Resume_-_Software_Engineer.pdf";
 
 const skills = [
   { type: "HTML", level: 99 },
@@ -23,7 +22,7 @@ class AboutMe extends Component {
   render() {
     return (
       <div className="AboutMe">
-        <h1 className="Title">About Me</h1>
+        <h2 className="Title">About Me</h2>
         <Tabs className="tab-container">
           <TabList className="tablist">
             <Tab className="tab">
@@ -50,10 +49,8 @@ class AboutMe extends Component {
                       <h4>
                         <i>
                           <b>
-                            &nbsp;&nbsp;In my spare time, I enjoy making 8 bit
-                            portraits and animations. I often get a lot of
-                            clients who want animations or a portrait, so I'm
-                            able to make money off of my expression.
+                            In my spare time, I enjoy making 8 bit
+                            portraits and animations.
                           </b>
                         </i>
                       </h4>
@@ -83,8 +80,8 @@ class AboutMe extends Component {
                     <h4>
                       <i>
                         <b>
-                          &nbsp;&nbsp;I dabble in film, photography and editing.
-                          Which in turn, helps me create viral videos,
+                          I dabble in film, photography and editing.
+                          It comes in handy when I'm creating viral videos,
                           commercials and skits for social media.
                         </b>
                       </i>
@@ -114,22 +111,20 @@ class AboutMe extends Component {
                     <h4>
                       <i>
                         <b>
-                          &nbsp;&nbsp;I've produced music for a multitude of
-                          artists. From known to unknown artists, but I prefer
-                          to make music for the video games I plan to make in
-                          the near future. I come from a musical family.From a
-                          very early age, I was indoctrinated into the music
-                          industry, but never wanted to take part.
+                          I prefer to make music for the video games
+                          that I plan to make in the near future.
                         </b>
                       </i>
                     </h4>
                     <iframe
+                      title="soundcloud"
                       width="100%"
                       height="450"
                       scrolling="no"
                       frameborder="no"
                       allow="autoplay"
                       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/5081193&color=%23f03f3f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                      target="_blank"
                     />
                   </div>
                 </div>
@@ -138,21 +133,22 @@ class AboutMe extends Component {
                   <h4>
                     <i>
                       <b>
-                        &nbsp;&nbsp;I do a podcast called, The Devinci Code.
-                        Where I talk about different ways to stay positive when
+                        My podcast is called, The Devinci Code. I
+                        talk about different ways to stay positive when
                         surronded by negativity. I also have tech talks and
-                        feature the song of the week. The first new episode's
-                        airing date is TBA.
+                        feature the song of the week.
                       </b>
                     </i>
                   </h4>
                   <iframe
+                    title="spotify"
                     src="https://open.spotify.com/embed/show/3u9SMMXVGMGvJgy0XTje5P"
-                    width="300"
+                    width="100%"
                     height="380"
                     frameborder="0"
                     allowtransparency="true"
                     allow="encrypted-media"
+                    target="_blank"
                   />
                 </div>
               </div>
@@ -168,10 +164,9 @@ class AboutMe extends Component {
                     <h4>
                       <i>
                         <b>
-                          &nbsp;&nbsp;I've been an athlete all my life. I can
-                          play any sport, but my favorites are basketball and
+                          My favorite sports are basketball and
                           track and field. Challenge me to a race or a game of
-                          basketball, I dare you!!!
+                          basketball, you won't like the outcome.
                         </b>
                       </i>
                     </h4>
@@ -230,52 +225,17 @@ class AboutMe extends Component {
                   <img
                     className="avatar"
                     src="https://i.imgur.com/hv20TVU.jpg?2"
+                    alt="avatar"
                   />
                   <h2>
                     <b>Software Engineer | Content Creator</b>
                   </h2>
                   <h4 className="bio">
-                    &nbsp;&nbsp;Hello! I enjoy working with Javascript, React,
-                    Redux, MongoDB, Express.js, Node.js, React Native, as well
-                    as HTML and CSS. I'm always looking to learn and integrate
-                    new programming languages to have in my arsenal. When I'm
-                    not coding, I create viral video content for social media
-                    and produce music.
+                    &nbsp;&nbsp;I enjoy working with Javascript, React, Redux,
+                    MongoDB, Express.js, Node.js, React Native, as well as HTML
+                    and CSS. I'm always looking to learn and integrate new
+                    programming languages to have in my arsenal.
                   </h4>
-                  <div className="socialIcons">
-                    <a href={file}>
-                      <img
-                        id="left"
-                        className="icons"
-                        src="https://mbtskoudsalg.com/images/resume-icon-png-4.png"
-                      />
-                    </a>
-                    <a href="https://www.linkedin.com/in/devin-baldwin-a7381073/">
-                      <img
-                        className="icons"
-                        src="https://opinahjo.fi/wp-content/uploads/2013/04/LinkedIn.png"
-                      />
-                    </a>
-                    <a href="https://www.instagram.com/itsdevinci/">
-                      <img
-                        className="icons"
-                        src="https://i0.wp.com/lilliputadventure.com/wp-content/uploads/2018/06/Instagram-Icon.png?fit=1455%2C1454"
-                      />
-                    </a>
-
-                    <a href="https://www.youtube.com/channel/UCdWMwP8ynch1I0fkgTZUrLw/videos">
-                      <img
-                        className="icons"
-                        src="https://upload.wikimedia.org/wikipedia/commons/4/40/Youtube_icon.svg"
-                      />
-                    </a>
-                    <a href="https://github.com/Dbald">
-                      <img
-                        className="icons"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png"
-                      />
-                    </a>
-                  </div>
                 </div>
                 <div className="inner-resume-container">
                   <div className="left-inner-resume">
@@ -316,9 +276,11 @@ class AboutMe extends Component {
                         Monica, CA September 2015  –  February 2016{" "}
                       </i>
                       <br />
-                      <br /> &nbsp;&nbsp;As a intern, I worked on the design and
-                      implementation of the front-end of the Android mobile
-                      application using Android Studio.
+                      <br /> &nbsp;&nbsp;As an intern, I worked in a team of two
+                      with the UX/UI designer to implement the look and feel of
+                      the Android mobile app. I utilized IDEs and tools such as
+                      Android Studio, Genymotion and Microsoft Visual Studio
+                      Code.
                     </h4>
                   </div>
                   <div className="right-inner-resume">
@@ -364,7 +326,7 @@ class AboutMe extends Component {
                       <br /> -Python
                     </h4>
                     {/* SMC */}
-                    <img
+                    {/* <img
                       className="exp-img"
                       src="http://4studenthealth.relationinsurance.com/wp-content/uploads/Santa-Monica-College-logo.png"
                       alt="smc"
@@ -379,7 +341,7 @@ class AboutMe extends Component {
                       low-level and essential languages, Database Theory,
                       Operating Systems Fundamentals, Computer Hardware and Data
                       Structures.
-                    </h4>
+                    </h4> */}
                   </div>
                 </div>
                 <div className="bottom-inner-resume" />

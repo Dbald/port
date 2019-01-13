@@ -37,16 +37,16 @@ a:hover a:visited a:active {
 }
 .logo-holder a,
 .main-nav a {
-	padding: 10px 15px;
+	padding: 25px 15px;
 	text-align: center;
 	display: inline-block;
 }
 /*------Navigation------------------------------------------------*/
 li:hover {
-	color: white;
+	color: white
 }
 ul li {
-	color: rgb(233, 233, 233);
+	color: rgb(206, 204, 204);
 	width: 100%;
 }
 ul {
@@ -60,20 +60,38 @@ ul {
 } */
 /*-----------Footer---------------*/
 .footer-main {
-	position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
+  display: flex;
+	padding: 2%;
+	width: 100%;
   text-align: center;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	background: transparent;
+  flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+  background: -moz-linear-gradient(
+    top,
+    rgba(30, 87, 153, 1) 0%,
+    rgba(125, 185, 232, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(30, 87, 153, 1) 0%,
+    rgba(125, 185, 232, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 87, 153, 1) 0%,
+    rgba(125, 185, 232, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );
+}
+/* span {
+  float: left
+} */
+.footer-nav {
 }
 /*---------Media---------*/
 /* Medium screens */
-@media all and (max-width: 974px) {
+@media all and (max-width: 1350px) {
   .header-main {
     /* When on medium sized screens, we center it by evenly distributing empty space around items */
     justify-content: space-around;
@@ -86,16 +104,16 @@ ul {
 }
 
 /* Small screens */
-@media all and (max-width: 500px) {
+@media all and (max-width: 740px) {
   .header-main {
     /* On small screens, we are no longer using row direction but column */
 		flex-direction: column;
 		text-align: center;
 	}
-	li {
+	.main-nav {
 		display: flex;
+		flex-direction: column;
 		text-align: center;
-		border: solid white 2px;
 		width: 100%;
 		padding: 2%;
 	}

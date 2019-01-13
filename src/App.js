@@ -6,8 +6,8 @@ import Home from './components/home';
 import AboutMe from './components/aboutme';
 import Projects from './components/projects';
 import Blog from './components/blog';
-import Contact from './components/contact';
-// import Footer from './components/navbar/footer';
+// import Contact from './components/contact';
+import Footer from './components/navbar/footer';
 
 class App extends Component {
   render() {
@@ -15,13 +15,13 @@ class App extends Component {
       <Router>
         <div className="App">
           <Route path="/" component={Header} />
-          {/* <Route path="/" component={Footer} /> */}
           <Route exact path="/" component={Home}  />
           <Route path="/home" component={Home}  />
           <Route path="/aboutme" component={AboutMe} />
           <Route path="/projects" component={Projects} />
           <Route path="/blog" component={Blog}/>
-          <Route path="/contact" component={Contact} />
+          <Route path="/" component={Footer} />
+          {/* <Route path="/contact" component={Contact} /> */}
         </div>
       </Router>
     );

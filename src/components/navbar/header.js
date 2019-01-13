@@ -15,31 +15,26 @@ class Header extends Component {
       {/* //-------Navigation Start-----// */}
       <div className="nav">
         <ul className="main-nav">
-          <Link to='home'>
-            <li>
-              <a><b>HOME</b></a>
-            </li>
-          </Link>
           <Link to='aboutme'>
             <li>
-              <a><b>ABOUT</b></a>
+              <b>ABOUT</b>
             </li>
           </Link>
           <Link to='projects'>
             <li>
-              <a><b>PROJECTS</b></a>
+              <b>PROJECTS</b>
             </li>
           </Link>
           <Link to='blog'>
             <li>
-              <a><b>BLOG</b></a>
+              <b>BLOG</b>
             </li>
           </Link>
-          <Link to='contact'>
+          <a href="mailto:devincitechsolutions@gmail.com">
             <li>
-              <a><b>CONTACT</b></a>
+              <b>CONTACT</b>
             </li>
-          </Link>
+          </a>
         </ul>
       </div>
       </header>

@@ -21,5 +21,7 @@ body {
 .App {
   text-align: center;
   animation: mymove 5s infinite;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 

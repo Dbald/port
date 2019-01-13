@@ -1,13 +1,16 @@
 .Blog {
-  width: 100%;
+  display: flex;
   box-sizing: border-box;
-  background-color: transparent;
-  padding-bottom: 10%;
-  padding-top: 2%;
-  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
-.blog-title {
-  color: #000000;
+.blog-title a{
+  color: whitesmoke;
+}
+.blog-text {
+  color: #000000
 }
 .container {
   display: flex;
@@ -17,10 +20,12 @@
   padding: 0 4px;
 }
 .Entries {
-  width: 50%;
+  width: 80%;
   box-sizing: border-box;
-  background: url('https://ubisafe.org/images/book-vector-old-1.png') top no-repeat;
-  background-size: cover;
+  background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(30,87,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(30,87,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );
   padding-bottom: 1%;
   padding-top: 2%;
   margin: 2%;
