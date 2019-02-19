@@ -38,6 +38,9 @@ body {
 .gif {
   height: 300px;
 }
+#resize {
+  width: 90%
+}
 .project-slides {
  padding-bottom: 2rem
 }

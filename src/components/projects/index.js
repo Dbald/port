@@ -12,6 +12,48 @@ export default class Projects extends Component {
       <div className="Projects">
         <h1 className="Title">Projects</h1>
         <div className="carousel">
+        {/* Project #1 */}
+        <div className="project-slides">
+              <h2 className="slide-title">Why Note?</h2>
+              <div className="main-project-slides">
+                <img
+                  src="https://i.imgur.com/KvQpJyb.png"
+                  alt="slide"
+                  className="slides"
+                  title="Why Note?"
+                />
+                <div className="description-holder">
+                  <div className="slide-description">
+                    Simple react web application that allows users to create and view notes<br />
+                    <br />
+                    Tech: React and Netlify.{" "}
+                  </div>
+                  <img id="resize"
+                    alt="slide"
+                    src="https://i.imgur.com/r3wmFsj.png"
+
+                    className="gifs"
+                  />
+                </div>
+              </div>
+              <div className="button-holder">
+                <button className="slide-buttons">
+                  <a href="https://practical-neumann-25384b.netlify.com" target="_blank" rel="noopener noreferrer">
+                    Demo
+                  </a>
+                </button>
+                <button className="slide-buttons">
+                  <a
+                    href="https://github.com/Dbald/front-end-project-week"
+                    target="_blank" rel="noopener noreferrer"
+                  >
+                    Code
+                  </a>
+                </button>
+              </div>
+              <br />
+            </div>
+            {/* Project #2 */}
             <div className="project-slides">
               <h2 className="slide-title">Give Me My Money</h2>
               <div className="main-project-slides">
@@ -55,6 +97,7 @@ export default class Projects extends Component {
               </div>
               <br />
             </div>
+            {/* Project #3 */}
             <div className="project-slides">
               <h2 className="slide-title">The Devinci Code</h2>
               <div className="main-project-slides">
@@ -91,6 +134,7 @@ export default class Projects extends Component {
               </div>
               <br />
             </div>
+            {/* Project #4 */}
             <div className="project-slides">
               <h2 className="slide-title">Resize</h2>
               <div className="main-project-slides">
