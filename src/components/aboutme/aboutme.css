@@ -88,7 +88,7 @@ html {
 /* Image Settings */
 .art-img {
   height: 300px;
-  width: auto;
+  width: 300px;
   transition: transform 0.2s;
 }
 .art-img:hover {
@@ -473,8 +473,8 @@ html {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1680px) {
   .art-img {
-    height: 25%;
-    width: 25%;
+    height: 200px;
+    width: 20%;
   }
 }
 @media screen and (max-width: 870px) {
