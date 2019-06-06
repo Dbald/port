@@ -7,15 +7,15 @@ import SkillBar from "react-skillbars";
 const skills = [
   { type: "HTML", level: 99 },
   { type: "CSS", level: 98 },
-  { type: "JavaScript", level: 68 },
+  { type: "JavaScript", level: 70 },
   { type: "React", level: 76 },
-  { type: "Native", level: 70 },
+  { type: "React Native", level: 70 },
   { type: "Express", level: 70 },
   { type: "UX/UI", level: 85 },
-  { type: "VR/AR", level: 68 },
-  { type: "MongoDB", level: 70 },
+  { type: "XR", level: 88 },
+  { type: "Aframe", level: 70 },
   { type: "Wordpress", level: 90 },
-  { type: "Git", level: 86 }
+  { type: "Unity", level: 86 }
 ];
 
 class AboutMe extends Component {

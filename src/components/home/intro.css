@@ -59,6 +59,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
       opacity:1
     }
   }
+  .Mobile-Image {
+    display: none
+  }
   /* @media  */
 @media only screen and (max-width: 866px) {
   body {
@@ -68,28 +71,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     background: none;
   }
   #title {
-    visibility: hidden;
+    display: none
   }
-  .Header-Image {
-    height: auto;
-  }
-  .Header-Image-Responsive {
-    background: url('../../img/Welcome.gif') no-repeat;
-    background-size: contain;
+  .Mobile-Image {
+    display: flex;
     width: 100%;
-    position: relative;
-    animation:fading 10s
-}
-  @keyframes fading {
-    0% {
-      opacity:0
-    }
-    50% {
-      opacity:1
-    }
-    100% {
-      opacity:1
-    }
   }
 }
 

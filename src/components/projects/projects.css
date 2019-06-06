@@ -113,7 +113,7 @@ body {
   }
 }
 @media screen and (max-width: 785px) {
-  .gifs, .gif {
+  .gifs {
     width: 100%;
     height: auto;
   }
@@ -124,6 +124,9 @@ body {
     display: initial
   }
   .drag {
+    display: none
+  }
+  .gif {
     display: none
   }
 }

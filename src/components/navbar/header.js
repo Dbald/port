@@ -4,14 +4,25 @@ import { slide as Menu } from "react-burger-menu";
 import "./navbar.css";
 
 class Header extends Component {
+  state = {
+    isTop: true,
+  };
 
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 100;
+      if (isTop !== this.state.isTop) {
+          this.setState({ isTop })
+      }
+    });
+  }
 
   render() {
     const logo = require("../../img/header_letter.png");
 
     return (
       //---------HEADER---------//
-      <header className="header-main">
+      <header className="header-main">Scroll {this.state.isTop ? 'down' : 'up'}!
         <Link to="home">
           <a className="logo-holder">
             <img className="logo" src={logo} alt="logo" />
@@ -42,8 +53,11 @@ class Header extends Component {
             </a>
           </ul>
         </div>
-        <Menu id="burger">
+        <Menu>
         <ul>
+            <li>
+              <img src="https://piskel-imgstore-b.appspot.com/img/116bfed9-8822-11e9-b732-c34339b7f50f.gif" alt="vinci" />
+            </li>
             <Link to="aboutme">
               <li className="ham">
                 <b>ABOUT</b>

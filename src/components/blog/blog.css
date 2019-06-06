@@ -53,4 +53,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     width: 100%;
     box-shadow: 0 0 0 0;
   }
+  iframe {
+    height: 150px;
+  }
 }
