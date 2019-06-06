@@ -54,10 +54,46 @@ ul {
   padding: 0;
   list-style: none;
 }
-/* .nav {
-	margin-right: 5%;
-	position: relative;
-} */
+#burger {
+	text-align: left
+}
+.ham {
+	margin: 10%;
+	color: black;
+}
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+.bm-burger-bars {
+  background: white;
+}
+.bm-burger-bars-hover {
+  background: #d2e063;
+}
+#burger,.bm-burger-bars,
+.bm-burger-button {
+	display: none;
+	margin-bottom: 5%;
+
+}
+.bm-menu {
+  background: #d2e063;
+  padding: 2.5em 1.5em 0;
+	font-size: 1.15em;
+}
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
 /*-----------Footer---------------*/
 .footer-main {
   display: flex;
@@ -84,11 +120,7 @@ ul {
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );
 }
-/* span {
-  float: left
-} */
-.footer-nav {
-}
+
 /*---------Media---------*/
 /* Medium screens */
 @media all and (max-width: 1350px) {
@@ -118,9 +150,13 @@ ul {
 		padding: 2%;
 	}
 	.logo-holder {
-		margin: 0%;
+		margin-right: 5%;
+		float: right;
 	}
 	.nav {
-		width: 100%;
+		display: none
+	}
+	#burger, .bm-burger-button, .bm-burger-bars {
+		display: flex
 	}
 }
