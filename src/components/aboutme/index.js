@@ -39,7 +39,7 @@ class AboutMe extends Component {
                             editing. It comes in handy when I'm creating viral
                             videos, commercials and skits for social media.
                           
-                        </i>
+                        </i> 
                       </h4>
                     </div>
                     <div className="artImages">
