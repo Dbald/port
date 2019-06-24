@@ -31,7 +31,7 @@ class AboutMe extends Component {
                   <div className="top-inner-art">
                     <div className="artBio">
                       <h2>My Artistic Expression</h2>
-                      <h4>
+                      <p>
                         <i>
                           
                             In my spare time, I enjoy making 8 bit portraits and
@@ -40,7 +40,7 @@ class AboutMe extends Component {
                             videos, commercials and skits for social media.
                           
                         </i> 
-                      </h4>
+                      </p>
                     </div>
                     <div className="artImages">
                       <img
@@ -207,14 +207,14 @@ class AboutMe extends Component {
                 <h2>
                   Software Engineer | Content Creator
                 </h2>
-                <h4 className="bio">
+                <p className="bio">
                   Front End Engineer who is passionate and confident
                   in my ability to create and design beautiful interfaces. A
                   fast learner and always eager to grow my knowledge. Morale
                   tends to spike up due to my positive, upbeat and optimistic
                   personality. Looking to grow with a great team of individuals
                   that can guide my growth as an engineer.
-                </h4>
+                </p>
               </div>
               <div className="inner-resume-container">
                 <div className="left-inner-resume">
@@ -284,12 +284,11 @@ class AboutMe extends Component {
                     <i>
                       Freelancer at Devinci Tech Solutions April
                       2017  –  Present
-                    </i>
-                    <br />
-                    <br /> &nbsp;&nbsp;I freelance under Devinci Tech Solutions,
+                    </i></h4>
+                    <p>I freelance under Devinci Tech Solutions,
                     I provide Web and Social Media services to clients, as well
-                    as music production.
-                  </h4>
+                    as music production.</p>
+                  
                   {/* TheLatest.com */}
                   <img
                     className="exp-img"
@@ -300,13 +299,12 @@ class AboutMe extends Component {
                     <i>
                       Front End Developer Intern at TheLatest.com Inc, Santa
                       Monica, CA September 2015  –  February 2016{" "}
-                    </i>
-                    <br />
-                    <br /> &nbsp;&nbsp;As an intern, I worked in a team of two
+                    </i></h4>
+                    <p>As an intern, I worked in a team of two
                     with the UX/UI designer to implement the look and feel of
                     the Android mobile app. I utilized IDEs and tools such as
                     Android Studio, Genymotion and Microsoft Visual Studio Code.
-                  </h4>
+                  </p>
                 </div>
                 <div className="right-inner-resume">
                   <h2>Education</h2>
@@ -320,9 +318,8 @@ class AboutMe extends Component {
                     <i>
                       Certiﬁcate In Software Engineering, Lambda School, San
                       Francisco January 2018  –  August 2018
-                    </i>
-                    <br />
-                    <br /> &nbsp;&nbsp;The Lambda Academy of Computer Science
+                    </i></h4>
+                    <p>The Lambda Academy of Computer Science
                     covers computing from its fundamentals to fully-deployed,
                     applications. Lambda School is an extensive full-time 7
                     month Computer Science Academy focused on Full-Stack Web
@@ -349,7 +346,7 @@ class AboutMe extends Component {
                     <br />  -Computer Architecture 
                     <br /> -C/ Operating Systems 
                     <br /> -Python
-                  </h4>
+                  </p>
                   {/* SMC */}
                   {/* <img
                       className="exp-img"

@@ -319,7 +319,6 @@ html {
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#136483', endColorstr='#007db9e8',GradientType=0 );
   border-radius: 15px;
-  padding: 2%;
   justify-content: flex-start;
   width: 100%;
   /* filter: drop-shadow(20px 10px 4px rgb(80, 73, 63)); */
@@ -415,10 +414,11 @@ html {
   border-radius: 100%;
   justify-content: flex-start;
 }
-.bio {
+p {
   color: white;
   text-align: left;
-  padding-bottom: 2%
+  padding: 2%;
+  filter: drop-shadow(black 2px 2px 2px);
 }
 .icons {
   width: 30px;
@@ -466,7 +466,7 @@ html {
   /* .tablist {
     padding: 5%;
   } */
-  h4 {
+  p {
     text-align: left;
     width: 100%;
   }
@@ -495,7 +495,8 @@ html {
   }
 }
 @media screen and (max-width: 400px) {
-  h4 {
-    font-size: 80%
+  p {
+    font-size: 80%;
+    padding: 5%
   }
 }
