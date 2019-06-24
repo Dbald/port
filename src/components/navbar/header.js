@@ -22,7 +22,7 @@ class Header extends Component {
 
     return (
       //---------HEADER---------//
-      <header className="header-main">Scroll {this.state.isTop ? 'down' : 'up'}!
+      <header className="header-main">
         <Link to="home">
           <a className="logo-holder">
             <img className="logo" src={logo} alt="logo" />

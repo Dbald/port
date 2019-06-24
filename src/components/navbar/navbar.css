@@ -24,6 +24,7 @@ a:hover a:visited a:active {
 	width: 20rem;
 	margin: 0;
 	transition: transform .2s;
+	filter: drop-shadow(black 2px 2px 2px);
 }
 .logo:hover {
   transform: scale(1.2);
@@ -42,11 +43,22 @@ a:hover a:visited a:active {
 	display: inline-block;
 }
 /*------Navigation------------------------------------------------*/
+li {
+	color: whitesmoke;
+	filter: drop-shadow(black 2px 2px 2px);
+
+}
+b {
+	color: whitesmoke
+}
+b:hover {
+	color: black
+}
 li:hover {
-	color: white
+	color: black
 }
 ul li {
-	color: rgb(206, 204, 204);
+	color: whitesmoke;
 	width: 100%;
 }
 ul {
@@ -67,10 +79,10 @@ ul {
   top: 36px;
 }
 .bm-burger-bars {
-  background: white;
+  background:black;
 }
 .bm-burger-bars-hover {
-  background: #d2e063;
+  background: #136483;
 }
 .bm-menu-wrap,.bm-burger-bars,
 .bm-burger-button {
@@ -78,7 +90,21 @@ ul {
 	margin-bottom: 5%;
 }
 .bm-menu {
-  background: #d2e063;
+  background: -moz-linear-gradient(
+    top,
+    #136483 0%,
+    rgba(125, 185, 232, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #136483 0%,
+    rgba(125, 185, 232, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #136483 0%,
+    rgba(125, 185, 232, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   padding: 2.5em 1.5em 0;
 	font-size: 1.15em;
 	border: none
@@ -107,17 +133,17 @@ ul {
 	align-items: flex-end;
   background: -moz-linear-gradient(
     top,
-    rgba(30, 87, 153, 1) 0%,
+    #136483 0%,
     rgba(125, 185, 232, 0) 100%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     top,
-    rgba(30, 87, 153, 1) 0%,
+    #136483 0%,
     rgba(125, 185, 232, 0) 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to bottom,
-    rgba(30, 87, 153, 1) 0%,
+    #136483 0%,
     rgba(125, 185, 232, 0) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );

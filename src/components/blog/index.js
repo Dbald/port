@@ -15,7 +15,7 @@ class Blog extends Component {
                 “What are 3 things you value, 3 things you believe in, and an
                 epiphany that changed your perspective?
               </h2>
-              <iframe width="100%" height="315" src="https://www.youtube.com/embed/j9gwgr1uetQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe title="" width="100%" height="315" src="https://www.youtube.com/embed/j9gwgr1uetQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
           <div className="Entries">

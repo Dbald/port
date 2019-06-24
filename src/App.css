@@ -1,26 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Wire+One');
+
 
 html {
   height: 100%;
 }
 body {
   height: 100%;
-  animation:fading 5s
 }
-  @keyframes fading {
-    0% {
-      opacity:0
-    }
-    50% {
-      opacity:1
-    }
-    100% {
-      opacity:1
-    }
-  }
+
 .App {
   text-align: center;
-  animation: mymove 5s infinite;
   margin-left: 15%;
   margin-right: 15%;
 }

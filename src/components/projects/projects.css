@@ -20,17 +20,17 @@ body {
 .carousel {
   background: -moz-linear-gradient(
     top,
-    rgba(30, 87, 153, 1) 0%,
+    #136483 0%,
     rgba(125, 185, 232, 0) 100%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     top,
-    rgba(30, 87, 153, 1) 0%,
+    #136483 0%,
     rgba(125, 185, 232, 0) 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to bottom,
-    rgba(30, 87, 153, 1) 0%,
+    #136483 0%,
     rgba(125, 185, 232, 0) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );
@@ -80,11 +80,11 @@ body {
   transform: scale(0.8);
 }
 .Title {
-  font-size: 5rem;
-  font-family: 'Wire One', sans-serif;
+  font-size: 2rem;
   color: whitesmoke;
-  margin-left: 2%;
-  text-align: center;
+  margin-top: 5%;
+  margin-left: 3%;
+  text-align: left;
 }
 .swipe {
   display: none;
@@ -132,7 +132,7 @@ body {
 }
 @media screen and (max-width: 602px) {
   .Title {
-    font-size: 3rem
+    font-size: 220%
   }
   
   .slides {
