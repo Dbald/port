@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 95%;
 }
 .blog-title a{
   color: whitesmoke;
@@ -51,6 +51,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 }
 .icon:hover {
   transform: scale(1.2);
+}
+.insta {
+  height: 500px;
 }
 /* MEDIA */
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */

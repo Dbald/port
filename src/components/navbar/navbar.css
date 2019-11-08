@@ -66,62 +66,6 @@ ul {
   padding: 0;
   list-style: none;
 }
-.ham {
-	margin: 10%;
-	color: black;
-	border: none
-}
-.bm-burger-button {
-  position: fixed;
-  width: 26px;
-  height: 15px;
-  left: 36px;
-  top: 36px;
-}
-.bm-burger-bars {
-	background:black;
-	
-}
-.bm-burger-bars-hover {
-  background: #136483;
-}
-.bm-menu-wrap,.bm-burger-bars,
-.bm-burger-button {
-	display: none;
-	margin-bottom: 5%;
-}
-.bm-menu {
-  background: -moz-linear-gradient(
-    top,
-    #136483 0%,
-    rgba(125, 185, 232, 0) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    #136483 0%,
-    rgba(125, 185, 232, 0) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #136483 0%,
-    rgba(125, 185, 232, 0) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  padding: 2.5em 1.5em 0;
-	font-size: 1.15em;
-	border: none
-}
-.bm-item-list {
-  padding: 0.8em;
-}
-.bm-menu-wrap {
-	position: relative;
-	text-align: left;
-	width: 20px;
-}
-.bm-cross {
-	background: white
-}
-
 
 /*-----------Footer---------------*/
 .footer-main {
@@ -150,6 +94,34 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );
 }
 
+/*-----------------------------Tabbar--------------------------------*/
+#tabbar {
+  display: none;
+}
+.tabs {
+  display: flex;
+  flex-direction: column
+}
+.undertext {
+  margin: 0%
+}
+.header {
+	padding-left: 0;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin: 0;
+}
+.links  {
+  font-size: 15px;
+  transition: 1s
+}
+.tabicons {
+  height: 35px;
+  width: auto;
+  margin: 0%;
+  padding: 0%
+}
+
 /*---------Media---------*/
 /* Medium screens */
 @media all and (max-width: 1350px) {
@@ -167,9 +139,17 @@ ul {
 /* Small screens */
 @media all and (max-width: 740px) {
   .header-main {
-    /* On small screens, we are no longer using row direction but column */
-		flex-direction: column;
-		text-align: center;
+	 display: none;
+	}
+	/* Tabbar */
+	#tabbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: black;
+    position: fixed;
+		bottom: 0;
+		z-index: 4;
 	}
 	.main-nav {
 		display: flex;

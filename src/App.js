@@ -8,6 +8,7 @@ import Projects from './components/projects';
 import Blog from './components/blog';
 // import Contact from './components/contact';
 import Footer from './components/navbar/footer';
+import TabBar from './components/navbar/tabbar';
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/projects" component={Projects} />
           <Route path="/blog" component={Blog}/>
           <Route path="/" component={Footer} />
+          <Route path="/" component={TabBar} />
           {/* <Route path="/contact" component={Contact} /> */}
         </div>
       </Router>

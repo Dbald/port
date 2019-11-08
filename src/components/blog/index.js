@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import InstagramEmbed from 'react-instagram-embed';
 import "../../App.css";
 import "./blog.css";
 
@@ -8,16 +9,24 @@ class Blog extends Component {
       <div className="Blog">
         <h1 className="Title">Blog</h1>
         <div className="container">
-          <div className="Entries">
+          {/* <div className="Entries">
             <div className="span">
               <b>Feb 10</b>
               <h2>
                 “What are 3 things you value, 3 things you believe in, and an
                 epiphany that changed your perspective?
               </h2>
-              <iframe title="" width="100%" height="315" src="https://www.youtube.com/embed/j9gwgr1uetQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <InstagramEmbed
+                className="insta"
+                url="https://www.instagram.com/tv/BwGERl9hNl1"
+                maxWidth={500}
+                hideCaption={true}
+                containerTagName="div"
+                protocol=""
+                injectScript
+              />
             </div>
-          </div>
+          </div> */}
           <div className="Entries">
             <div className="span">
               <b>Aug 13</b>
