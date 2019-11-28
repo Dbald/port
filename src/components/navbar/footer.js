@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import file from 'https://drive.google.com/file/d/10Vf_w19K4vzu5uDk5VUHAtFxDBlxQoSb/view?usp=sharing';
 import "./navbar.css";
 
 export default class Footer extends Component {
@@ -16,7 +15,7 @@ export default class Footer extends Component {
             </li>
           </ul>
           <div className="socialIcons">
-            <a href={file} target="_blank" rel="resume">
+            <a href='https://drive.google.com/file/d/10Vf_w19K4vzu5uDk5VUHAtFxDBlxQoSb/view?usp=sharing' target="_blank" rel="resume">
               <img
                 id="left"
                 alt="doc"
