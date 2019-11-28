@@ -16,9 +16,10 @@ export default class Footer extends Component {
             </li>
           </ul>
           <div className="socialIcons">
-            <a href={file} target="_blank">
+            <a href={file} target="_blank" rel="resume">
               <img
                 id="left"
+                alt="doc"
                 className="icons"
                 src="https://mbtskoudsalg.com/images/resume-icon-png-4.png"
               />
