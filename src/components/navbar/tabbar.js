@@ -22,19 +22,6 @@ class TabBar extends Component {
             </NavLink>
           </div>
           <div className="tabs">
-            <NavLink activeClassName="current" className="links" to="/aboutme">
-              <img
-                className="tabicons about"
-                src="https://piskel-imgstore-b.appspot.com/img/2a468e8f-a5a8-11e9-8683-75ba66f9cf49.gif"
-                // "https://i.imgur.com/3WK2dmv.png"
-                // 
-                alt="about-icon"
-              />
-              
-              <p className="undertext">About</p>
-            </NavLink>
-          </div>
-          <div className="tabs">
             <NavLink activeClassName="current" className="links" to="/projects">
               <img
                 className="tabicons services"
@@ -44,18 +31,6 @@ class TabBar extends Component {
                 alt="service-icon"
               />
               <p className="undertext">Projects</p>
-            </NavLink>
-          </div>
-          <div className="tabs">
-            <NavLink activeClassName="current" className="links" to="/blog">
-              <img
-                className="tabicons media"
-                src="https://piskel-imgstore-b.appspot.com/img/7bd6bf02-a5b5-11e9-bdce-75ba66f9cf49.gif"
-                // "https://i.imgur.com/Xe2Pv72.png"
-                // 
-                alt="media-icon"
-              />
-              <p className="undertext">Blog</p>
             </NavLink>
           </div>
           <div className="tabs">

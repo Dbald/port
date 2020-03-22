@@ -10,46 +10,31 @@ a:hover a:visited a:active {
 	text-align: center;
 	background: transparent;
 	width: 100%;
+	
 }
 .icon {
 	height: 1rem;
 	width: 5rem;
 }
-.logo-holder {
-	float: left;
-	margin-left: 5%;
-}
-.logo {
-	height: 4rem;
-	width: 20rem;
-	margin: 0;
-	transition: transform .2s;
-	filter: drop-shadow(black 2px 2px 2px);
-}
-.logo:hover {
-  transform: scale(1.2);
-}
-.logo:active {
-  transform: scale(0.8);
-}
+
 .main-nav {
-	float: right;
+	text-align: right;
 	margin-right: 5%;
 }
 .logo-holder a,
 .main-nav a {
 	padding: 25px 15px;
-	text-align: center;
+	text-align: right;
 	display: inline-block;
 }
 /*------Navigation------------------------------------------------*/
 li {
 	color: whitesmoke;
-	filter: drop-shadow(black 2px 2px 2px);
-
+	
 }
 b {
-	color: whitesmoke
+	color: whitesmoke;
+	transition: 1s;
 }
 b:hover {
 	color: black
@@ -76,23 +61,7 @@ ul {
   flex-direction: row;
 	justify-content: center;
 	align-items: flex-end;
-  background: -moz-linear-gradient(
-    top,
-    #136483 0%,
-    rgba(125, 185, 232, 0) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    #136483 0%,
-    rgba(125, 185, 232, 0) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #136483 0%,
-    rgba(125, 185, 232, 0) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );
-}
+  }
 
 /*-----------------------------Tabbar--------------------------------*/
 #tabbar {
@@ -149,7 +118,8 @@ ul {
     background: black;
     position: fixed;
 		bottom: 0;
-		z-index: 4;
+		margin: 0;
+    z-index: 1000;
 	}
 	.main-nav {
 		display: flex;

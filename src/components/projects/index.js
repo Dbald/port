@@ -75,7 +75,7 @@ export default class Projects extends Component {
                   <img
                     alt="slide"
                     src="https://media.giphy.com/media/1yLDR0Adi9mg07cltO/giphy.gif"
-
+                   
                     className="gifs"
                   />
                 </div>
@@ -177,7 +177,7 @@ export default class Projects extends Component {
                   </a>
                 </button>
               </div>
-              <br />
+              <br /> 
             </div>
         </div>
       </div>
