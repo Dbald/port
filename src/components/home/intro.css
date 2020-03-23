@@ -81,8 +81,16 @@ text-align: left;
 #dev-intro {
   width: 100%;
   height: 100%;
+  display: none;
   border-radius: 50%;
-  filter: drop-shadow(8px 8px 10px gray);
+  filter: drop-shadow(8px 8px 10px rgb(59, 59, 33));
+  animation: float 6s ease-in-out infinite;
+}
+#dev-suite {
+  width: 100%;
+  height: 100%;
+  border-radius: 45%;
+  filter: drop-shadow(8px 8px 10px rgb(59, 59, 33));
   animation: float 6s ease-in-out infinite;
 }
 
@@ -165,6 +173,12 @@ text-align: left;
     font-size: x-large;
   }
   br {
+    display: none;
+  }
+  #dev-intro {
+    display: flex;
+  }
+  #dev-suite {
     display: none;
   }
   .header {

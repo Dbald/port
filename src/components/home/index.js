@@ -35,6 +35,12 @@ export default class Home extends Component {
               src="https://i.imgur.com/KdcyoSf.png"
               alt="dev"
             />
+            <img
+              id="dev-suite"
+              // src="https://i.imgur.com/kDWy5sj.png"
+              src="https://i.imgur.com/mqSGSnE.png"
+              alt="dev1"
+            />
           </div>
         </div>
         {/* <div id="diagonal-start"></div> */}
