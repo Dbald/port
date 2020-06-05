@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Projects from "../projects/index";
 import "./intro.css";
 import "../../App.css";
 
@@ -24,9 +23,7 @@ export default class Home extends Component {
               <br/>
               Looking to learn, contribute, and grow with a great team.
             </p></div>
-            <div className="button">
-              <a href="https://drive.google.com/file/d/10Vf_w19K4vzu5uDk5VUHAtFxDBlxQoSb/view?usp=sharing" target="_blank" rel="resume"><h3>Resume</h3></a>
-            </div>
+              <a href="https://drive.google.com/file/d/1fO7nfIBrG1ou9toO2xJZM_kGSEzDOGV-/view?usp=sharing" target="_blank" rel="noopener noreferrer" alt="resume"><div className="button"><h3>Resume</h3></div></a>
           </div>
           <div className="intro-picture">
             <img

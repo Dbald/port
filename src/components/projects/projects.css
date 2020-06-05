@@ -12,14 +12,19 @@ body {
   box-sizing: border-box;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
 
 }
 .carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   background: white;
 }
 .slide-title {
+  display: flex;
+  justify-content: center;
   color: black;
 }
 .gif {
@@ -29,17 +34,42 @@ body {
   width: 90%
 }
 .project-slides {
- padding-bottom: 2rem
+ width: 50%;
 }
 .main-project-slides {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5%;
+  transition: 1s;
+  z-index: -1;
 }
+.slides {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  transition: 1s;
+}
+.slides:hover {
+  opacity: 0.5;
+}
+.main-project-slides:hover {
+  cursor: pointer;
+  
+}
+.main-project-slides:hover > .description-holder {
+visibility: visible;
 
+
+
+}
+.description-holder {
+visibility: hidden;
+z-index: 1000;
+}
+.description-holder:hover > .slides:hover {
+  background-color: rgba(255,0,0,0.6);
+}
 .slide-description {
-  text-align: left;
   padding: 10px;
   color: black
 }
@@ -69,14 +99,7 @@ body {
   margin-left: 3%;
   text-align: left;
 }
-.swipe {
-  display: none;
-}
-.slides {
-  max-height: 400px;
-  border-radius: 15%;
-  padding: 10px
-}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* @media screen and (max-width: 1037px) {
   
@@ -100,8 +123,15 @@ body {
     width: 100%;
     height: auto;
   }
-  .main-project-slides {
+  .carousel {
+    flex-wrap: nowrap;
     flex-direction: column
+  }
+  .project-slides {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .slide-description {
   }
   .swipe {
     display: initial
@@ -121,6 +151,5 @@ body {
   .slides {
     height: auto;
     width: 100%;
-    margin: 5px;
   }
 }
