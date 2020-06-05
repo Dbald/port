@@ -80,7 +80,6 @@ z-index: 1000;
 .slide-buttons {
   text-decoration: none;
   background: #ff5039 ;
-  width: fit-content;
   color: white;
   cursor: pointer;
   padding: 1%;
@@ -89,7 +88,6 @@ z-index: 1000;
   border: none;
   border-radius: 5px;
   font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .Title {
